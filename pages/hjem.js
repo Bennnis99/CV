@@ -76,8 +76,8 @@ export default function Side() {
                             <Image src={ projectsLogo } alt="link" className="icon" />
                         </a>
                     </Link>
-                    <Link href="/" >
-                        <a>
+                    <Link href="https://github.com/Bennnis99" >
+                        <a target="_blank" rel="noreferrer noopener" >
                             <Image src={ githubLogo } alt="link" className="icon github" />
                         </a>
                     </Link>

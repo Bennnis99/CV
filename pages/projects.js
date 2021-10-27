@@ -76,8 +76,8 @@ export default function Side() {
                             <Image src={ projectsLogo } alt="link" className="icon active-icon" />
                         </a>
                     </Link>
-                    <Link href="/" >
-                        <a>
+                    <Link href="https://github.com/Bennnis99" >
+                        <a target="_blank" rel="noreferrer noopener" >
                             <Image src={ githubLogo } alt="link" className="icon github" />
                         </a>
                     </Link>
@@ -92,16 +92,14 @@ export default function Side() {
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">
-                        <h1>Title 1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus.
-                             Etiam congue rhoncus metus nec bibendum. Aenean varius, justo quis semper mattis, nulla metus auctor ex,
-                              id pellentesque est enim id purus. Nulla eros odio, gravida id purus quis, pharetra consequat tellus. Nunc 
-                              in felis eros. Suspendisse a sem nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                               posuere cubilia curae;</p>
+                        <h1>Prosjekter</h1>
+                        <p>På denne siden kan du se noen av prosjektene jeg har programmert, hvor jeg tar i bruk
+                            flere forskjellige teknologier som React, Next.js, CSS, HTML, JavaScript
+                        </p>
                     </StyledDivs1>
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
-                            <h2>Title 2</h2>
+                            <h2>React Tetris</h2>
                             <p>Etiam ut dignissim ipsum. Etiam eu ex porta, tincidunt velit eu, interdum ligula.
                                 In hac habitasse platea dictumst. Mauris in rhoncus sapien, vitae pulvinar velit.
                                 Donec condimentum leo vel neque elementum scelerisque. In sem tellus, consequat nec vestibulum a,
@@ -114,7 +112,7 @@ export default function Side() {
                             </p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
-                            <h2>Title 3</h2>
+                            <h2>Next.js CV-side</h2>
                             <p>In hac habitasse platea dictumst. Donec consectetur lectus ut dui eleifend scelerisque.
                                 Praesent et ultrices nisl, quis commodo eros. Aenean dictum facilisis turpis quis
                                 viverra. Aenean lobortis magna sed metus viverra pretium. Proin volutpat tincidunt

@@ -40,7 +40,7 @@ const LightThemeButton = styled.button`
     right: 1vw; 
     margin: 0;
     padding: 0;
-    transition: all 1000ms ease;
+    transition: all 1000ms ease-out;
     :hover {
         transform: scale(1.07);
         box-shadow: 0 0 6vw 4vw #FCFCFC;
