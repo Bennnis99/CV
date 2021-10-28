@@ -92,7 +92,7 @@ export default function Side() {
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">
-                        <h1>Title 1</h1>
+                        <h1>Om meg</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus.
                              Etiam congue rhoncus metus nec bibendum. Aenean varius, justo quis semper mattis, nulla metus auctor ex,
                               id pellentesque est enim id purus. Nulla eros odio, gravida id purus quis, pharetra consequat tellus. Nunc 
@@ -101,7 +101,7 @@ export default function Side() {
                     </StyledDivs1>
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
-                            <h2>Title 2</h2>
+                            <h2>Ferdigheter</h2>
                             <p>Etiam ut dignissim ipsum. Etiam eu ex porta, tincidunt velit eu, interdum ligula.
                                 In hac habitasse platea dictumst. Mauris in rhoncus sapien, vitae pulvinar velit.
                                 Donec condimentum leo vel neque elementum scelerisque. In sem tellus, consequat nec vestibulum a,

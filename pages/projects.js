@@ -1,7 +1,9 @@
 import Link from "next/link"
 import styled from "styled-components"
 import Image from "next/image"
-import React from "react"
+import React, {useState} from "react"
+
+import Modal from "../components/Modal"
 
 import aboutLogo from "./img/aboutme.svg"
 import projectsLogo from "./img/projects.svg"
@@ -63,6 +65,7 @@ const BoxBox = styled.div`
 
 
 export default function Side() {
+    const [showModal, setShowModal] = useState(false);
     return (
             <MainBox className="mainbox">
                 <LinkContainer>
@@ -100,16 +103,10 @@ export default function Side() {
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
                             <h2>React Tetris</h2>
-                            <p>Etiam ut dignissim ipsum. Etiam eu ex porta, tincidunt velit eu, interdum ligula.
-                                In hac habitasse platea dictumst. Mauris in rhoncus sapien, vitae pulvinar velit.
-                                Donec condimentum leo vel neque elementum scelerisque. In sem tellus, consequat nec vestibulum a,
-                                pulvinar id leo. Ut dui neque, scelerisque eget turpis nec, venenatis fermentum arcu. Vestibulum in
-                                {/* malesuada justo. Curabitur nunc velit, fringilla sed vulputate eget, convallis ut felis. Fusce eu nisl
-                                sed dolor molestie volutpat ac sed magna. Etiam tempor, erat ac egestas congue, tellus justo aliquam
-                                leo, in accumsan arcu ipsum vel lectus. In blandit suscipit diam, id interdum sapien. Etiam id velit
-                                ut tellus interdum tempus eu sed ex. Nulla pharetra ligula ut sem tristique, sit amet dictum metus
-                                condimentum. Pellentesque ac tellus et lectus consequat ornare pharetra vel nibh. */}
-                            </p>
+                            <button onClick={() => setShowModal(true)}>Open Modal</button>
+                            <Modal onClose={() => setShowModal(false)}show={showModal}>
+                                Hello from the modal!
+                            </Modal>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Next.js CV-side</h2>

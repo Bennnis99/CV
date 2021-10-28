@@ -12,7 +12,7 @@ import darkModeIcon from "./img/darkmode.png"
 
 const DarkThemeButton = styled.button`
     width: 3vw;
-    height: 3vw;
+    height: 2vw;
     background: #141417;
     position: fixed;
     border: none;
@@ -61,7 +61,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
-      {/* <button onClick={toggleTheme}>Switch Theme</button> */}
       <LightThemeButton onClick={toggleTheme} id="lightButton">
         <Image src={lightModeIcon} alt="light Mode" />
       </LightThemeButton>
