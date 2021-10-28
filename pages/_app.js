@@ -6,20 +6,23 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes/ThemeConfig" 
 import Image from "next/image"
 
-import lightModeIcon from "./img/lightmode.png"
-import darkModeIcon from "./img/darkmode.png"
-
+// import lightModeIcon from "../public/lightmode2.png"
+// import darkModeIcon from "../public/darkmode2.png"
+import lightModeIcon from "../public/lightmode.png"
+import darkModeIcon from "../public/darkmode.png"
 
 const DarkThemeButton = styled.button`
     width: 3vw;
-    height: 2vw;
-    background: #141417;
+    height: 3vw;
+    /* background: #141417; */
+    background: none;
     position: fixed;
     border: none;
     top: 1vh;
     right: 1vw; 
     margin: 0;
     padding: 0;
+    border-radius: 100%;
     transition: all 1000ms ease;
     :hover{
         transform: scale(1.07);
@@ -32,14 +35,16 @@ const DarkThemeButton = styled.button`
 
 const LightThemeButton = styled.button`
     width: 3vw;
-    height: 2vw;
-    background: #E0E0FF;
+    height: 3vw;
+    /* background: #E0E0FF; */
+    background: none;
     border: none;
     position: fixed;
     top: 1vh;
     right: 1vw; 
     margin: 0;
     padding: 0;
+    border-radius: 100%;
     transition: all 1000ms ease-out;
     :hover {
         transform: scale(1.07);

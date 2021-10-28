@@ -97,7 +97,7 @@ export default function Side() {
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
                             <h2>React Tetris</h2>
-                            <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
+                            <Image className="imagexd" src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
                             <Modal onClose={() => setShowModal(false)}show={showModal}>
                                 <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
                             </Modal>

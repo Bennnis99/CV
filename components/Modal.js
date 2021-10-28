@@ -17,7 +17,7 @@ const Modal = ({ show, onClose, children, title }) => {
     const modalContent = show ? (
       <StyledModalOverlay>
         <StyledModal>
-          {title && <StyledModalTitle>{title}</StyledModalTitle>}
+          {/* {title && <StyledModalTitle>{title}</StyledModalTitle>} */}
           <StyledModalBody href="#" onClick={handleCloseClick} >{children}</StyledModalBody>
         </StyledModal>
       </StyledModalOverlay>
