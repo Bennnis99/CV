@@ -3,12 +3,6 @@ import styled from "styled-components"
 import Image from "next/image"
 import React from "react"
 
-import aboutLogo from "./img/aboutme.svg"
-import projectsLogo from "./img/projects.svg"
-import profile from "./img/Coconut-maid.png"
-import githubLogo from "./img/githubLogo.svg"
-
-
 const MainBox = styled.div`
     width: 70vw;
     height: 80vh;
@@ -68,27 +62,27 @@ export default function Side() {
                 <LinkContainer>
                     <Link href="/hjem" >
                         <a>
-                            <Image src={ aboutLogo } alt="link" className="icon active-icon" />
+                            <Image src="/aboutme.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="/projects">
                         <a>
-                            <Image src={ projectsLogo } alt="link" className="icon" />
+                            <Image src="/projects.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="https://github.com/Bennnis99" >
                         <a target="_blank" rel="noreferrer noopener" >
-                            <Image src={ githubLogo } alt="link" className="icon github" />
+                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="/" >
                         <a>
-                            <Image src={ githubLogo } alt="link" className="icon github" />
+                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                 </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
-                    <Image src={profile} alt="me"/>
+                    <Image src="/Coconut-maid.png" alt="me" layout="responsive" width="30px" height="52px" />
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">

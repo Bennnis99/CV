@@ -17,13 +17,8 @@ const Modal = ({ show, onClose, children, title }) => {
     const modalContent = show ? (
       <StyledModalOverlay>
         <StyledModal>
-          <StyledModalHeader>
-            <a href="#" onClick={handleCloseClick}>
-              x
-            </a>
-          </StyledModalHeader>
           {title && <StyledModalTitle>{title}</StyledModalTitle>}
-          <StyledModalBody>{children}</StyledModalBody>
+          <StyledModalBody href="#" onClick={handleCloseClick} >{children}</StyledModalBody>
         </StyledModal>
       </StyledModalOverlay>
     ) : null;
@@ -38,22 +33,13 @@ const Modal = ({ show, onClose, children, title }) => {
     }
   };
   
-  const StyledModalBody = styled.div`
-    padding-top: 10px;
+  const StyledModalBody = styled.a`
+    /* padding-top: 10px; */
   `;
-  
-  const StyledModalHeader = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    font-size: 25px;
-  `;
-  
+
   const StyledModal = styled.div`
-    background: white;
-    width: 60vw;
-    height: 50vh;
-    border-radius: 15px;
-    padding: 2vw;
+    width: 73vw;
+    height: 80vh;
   `;
   const StyledModalOverlay = styled.div`
     position: absolute;

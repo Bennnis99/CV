@@ -32,7 +32,7 @@ const DarkThemeButton = styled.button`
 
 const LightThemeButton = styled.button`
     width: 3vw;
-    height: 3vw;
+    height: 2vw;
     background: #E0E0FF;
     border: none;
     position: fixed;

@@ -5,12 +5,6 @@ import React, {useState} from "react"
 
 import Modal from "../components/Modal"
 
-import aboutLogo from "./img/aboutme.svg"
-import projectsLogo from "./img/projects.svg"
-import profile from "./img/vanilla1.png"
-import githubLogo from "./img/githubLogo.svg"
-
-
 const MainBox = styled.div`
     width: 70vw;
     height: 80vh;
@@ -71,27 +65,27 @@ export default function Side() {
                 <LinkContainer>
                     <Link href="/hjem" >
                         <a>
-                            <Image src={ aboutLogo } alt="link" className="icon" />
+                            <Image src="/aboutme.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="/projects">
                         <a>
-                            <Image src={ projectsLogo } alt="link" className="icon active-icon" />
+                            <Image src="/projects.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="https://github.com/Bennnis99" >
                         <a target="_blank" rel="noreferrer noopener" >
-                            <Image src={ githubLogo } alt="link" className="icon github" />
+                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="/" >
                         <a>
-                            <Image src={ githubLogo } alt="link" className="icon github" />
+                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                 </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
-                    <Image src={profile} alt="me"/>
+                    <Image src="/vanilla1.png" alt="me" layout="responsive" width="30px" height="52px" />
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">
@@ -103,10 +97,11 @@ export default function Side() {
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
                             <h2>React Tetris</h2>
-                            <button onClick={() => setShowModal(true)}>Open Modal</button>
+                            <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
                             <Modal onClose={() => setShowModal(false)}show={showModal}>
-                                Hello from the modal!
+                                <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
                             </Modal>
+                            <p>tetris lagd i React</p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Next.js CV-side</h2>
