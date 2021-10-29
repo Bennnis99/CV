@@ -8,12 +8,12 @@ export const lightTheme = {
   accent: "#FCFCFC",
   titles: "#159ED8",
   filter: "invert(54%) sepia(33%) saturate(1531%) hue-rotate(159deg) brightness(88%) contrast(91%)",
-  invertFilter: "0",
+  invertFilter: "invert(1%) sepia(7%) saturate(6499%) hue-rotate(206deg) brightness(98%) contrast(86%)",
   darkButton: "none",
   lightButton: "inline",
   profile: "0 0 1.5vw #999999",
   textboxShadow: "inset 0 0 1vw #999999"
-}
+} 
 
 export const darkTheme = {
   body: '#252525',
