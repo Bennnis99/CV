@@ -102,6 +102,7 @@ export default function Side() {
                                 <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
                             </Modal>
                             <p>tetris lagd i React</p>
+                            <a href="https://bennnis99.github.io/React-Tetris/" target="_blank" rel="noreferrer noopener" className="link">Link til siden</a>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Next.js CV-side</h2>

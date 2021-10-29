@@ -74,4 +74,7 @@ export const GlobalStyles = createGlobalStyle`
   .profile {
     box-shadow: ${({ theme }) => theme.profile};
   }
+  .link {
+    color: ${({ theme }) => theme.titles};
+  }
   `

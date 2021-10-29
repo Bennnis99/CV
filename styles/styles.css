@@ -36,3 +36,11 @@
 .imagexd:hover {
   cursor:zoom-in;
 }
+
+.Modal:hover {
+  cursor: zoom-out;
+}
+
+.link {
+  font-weight: bold;
+}
