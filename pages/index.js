@@ -70,13 +70,13 @@ export default function Home() {
                             <Image src="/projects.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
-                    <Link href="https://github.com/Bennnis99" >
-                        <a target="_blank" rel="noreferrer noopener" >
+                    <Link href="/hjem" >
+                        <a>
                             <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
-                    <Link href="/hjem" >
-                        <a>
+                    <Link href="https://github.com/Bennnis99" >
+                        <a target="_blank" rel="noreferrer noopener" >
                             <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
