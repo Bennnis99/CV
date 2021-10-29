@@ -63,7 +63,7 @@ export default function Side() {
     return (
             <MainBox className="mainbox">
                 <LinkContainer>
-                    <Link href="/hjem" >
+                    <Link href="/" >
                         <a>
                             <Image src="/aboutme.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
@@ -78,7 +78,7 @@ export default function Side() {
                             <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
-                    <Link href="/" >
+                    <Link href="/hjem" >
                         <a>
                             <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
