@@ -3,12 +3,6 @@ import styled from "styled-components"
 import Image from "next/image"
 import React from "react"
 
-import aboutLogo from "./img/aboutme.svg"
-import projectsLogo from "./img/projects.svg"
-import profile from "./img/Coconut-maid.png"
-import githubLogo from "./img/githubLogo.svg"
-
-
 const MainBox = styled.div`
     width: 70vw;
     height: 80vh;
@@ -66,33 +60,33 @@ export default function Side() {
     return (
             <MainBox className="mainbox">
                 <LinkContainer>
-                    <Link href="/hjem" >
+                    <Link href="/" >
                         <a>
-                            <Image src={ aboutLogo } alt="link" className="icon active-icon" />
+                            <Image src="/aboutme.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="/projects">
                         <a>
-                            <Image src={ projectsLogo } alt="link" className="icon" />
+                            <Image src="/projects.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
+                        </a>
+                    </Link>
+                    <Link href="/hjem" >
+                        <a>
+                            <Image src="/githubLogo.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="https://github.com/Bennnis99" >
                         <a target="_blank" rel="noreferrer noopener" >
-                            <Image src={ githubLogo } alt="link" className="icon github" />
-                        </a>
-                    </Link>
-                    <Link href="/" >
-                        <a>
-                            <Image src={ githubLogo } alt="link" className="icon github" />
+                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                 </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
-                    <Image src={profile} alt="me"/>
+                    <Image src="/chocola.png" alt="me" layout="responsive" width="30px" height="52px" />
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">
-                        <h1>Title 1</h1>
+                        <h1>Gang gang</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus.
                              Etiam congue rhoncus metus nec bibendum. Aenean varius, justo quis semper mattis, nulla metus auctor ex,
                               id pellentesque est enim id purus. Nulla eros odio, gravida id purus quis, pharetra consequat tellus. Nunc 
@@ -101,7 +95,7 @@ export default function Side() {
                     </StyledDivs1>
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
-                            <h2>Title 2</h2>
+                            <h2>oof</h2>
                             <p>Etiam ut dignissim ipsum. Etiam eu ex porta, tincidunt velit eu, interdum ligula.
                                 In hac habitasse platea dictumst. Mauris in rhoncus sapien, vitae pulvinar velit.
                                 Donec condimentum leo vel neque elementum scelerisque. In sem tellus, consequat nec vestibulum a,

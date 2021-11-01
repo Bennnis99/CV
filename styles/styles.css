@@ -32,3 +32,15 @@
 .icon:hover {
   filter: invert(27%) sepia(16%) saturate(5460%) hue-rotate(322deg) brightness(99%) contrast(96%);
 }
+
+.imagexd:hover {
+  cursor:zoom-in;
+}
+
+.Modal:hover {
+  cursor: zoom-out;
+}
+
+.link {
+  font-weight: bold;
+}
