@@ -56,8 +56,8 @@ const LightThemeButton = styled.button`
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState("light") 
   
-  if (typeof window !== 'undefined') {
-    useEffect(() => {
+  useEffect(() => {
+   if (typeof window !== 'undefined') {
       if (localStorage.getItem("colorTheme") === null) {
         localStorage.setItem("colorTheme", "light")
       } else if (localStorage.getItem("colorTheme") === "light") {
@@ -65,18 +65,19 @@ function MyApp({ Component, pageProps }) {
       } else if (localStorage.getItem("colorTheme") === "dark") {
         setTheme("dark")
       }
-    },[])
-  }
-    const toggleTheme = () => {
-      // theme == 'light' ? setTheme('dark') : setTheme('light')
+    }
+  },[])
+
+  const toggleTheme = () => {
+    // theme == 'light' ? setTheme('dark') : setTheme('light')
       
-      if (theme === "light") {
-        setTheme("dark")
-        localStorage.setItem("colorTheme", "dark")
-      } else if (theme === "dark") {
-        setTheme("light")
-        localStorage.setItem("colorTheme", "light")
-      }
+    if (theme === "light") {
+      setTheme("dark")
+      localStorage.setItem("colorTheme", "dark")
+    } else if (theme === "dark") {
+      setTheme("light")
+      localStorage.setItem("colorTheme", "light")
+    }
   }
   
   return (
