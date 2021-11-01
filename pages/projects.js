@@ -48,7 +48,7 @@ const StyledDivs1 = styled.div`
     margin: 1.5vw;
 `
 const StyledDivs2 = styled.div`
-    padding: 0 1vw;
+    padding: 0 1vw 2.5vh 1vw;
 `
 const BoxBox = styled.div`
     display: flex;
@@ -106,30 +106,20 @@ export default function Side() {
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Next.js CV-side</h2>
-                            <p>In hac habitasse platea dictumst. Donec consectetur lectus ut dui eleifend scelerisque.
-                                Praesent et ultrices nisl, quis commodo eros. Aenean dictum facilisis turpis quis
-                                viverra. Aenean lobortis magna sed metus viverra pretium. Proin volutpat tincidunt
-                                fringilla. Suspendisse id mattis tortor.
+                            <p>
+                                Denne siden
                             </p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Title 4</h2>
-                            <p>Etiam ut aliquam lectus. Donec egestas, quam ac tincidunt fermentum, nunc dui imperdiet ipsum,
-                                ac vehicula arcu enim quis nulla. Nunc in aliquam mi. Nulla eleifend turpis sodales felis
-                                ultrices, et posuere dolor mollis. Ut efficitur venenatis quam a sollicitudin. Suspendisse
-                                potenti. Proin consectetur ante in viverra dignissim. Duis placerat cursus placerat. Sed
-                                dignissim lacus eu nisl dictum, id finibus ipsum euismod. Quisque et dictum neque. Nulla
-                                nec placerat leo.
+                            <p>
+                                prosjekt3
                             </p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Title 5</h2>
-                            <p>Maecenas interdum ultricies sapien, sit amet semper lacus mattis at. Duis maximus dapibus condimentum.
-                                Proin convallis sollicitudin nunc sit amet efficitur. Quisque elementum magna et enim varius,
-                                id consequat dolor mollis. Nam placerat neque et scelerisque consequat. Nam massa felis, congue
-                                quis nunc non, vulputate vulputate urna. Nam arcu erat, suscipit sollicitudin velit at, tincidunt
-                                hendrerit velit. Proin pulvinar malesuada dolor vulputate eleifend. Nunc imperdiet orci justo,
-                                vitae porttitor neque tempor vitae.
+                            <p>
+                                prosjekt4
                             </p>
                         </StyledDivs2>
                     </StyledDivs>

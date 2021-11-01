@@ -1,20 +1,18 @@
 import '../styles/globals.css'
 import "../styles/styles.css"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes/ThemeConfig" 
 import Image from "next/image"
 
-// import lightModeIcon from "../public/lightmode2.png"
-// import darkModeIcon from "../public/darkmode2.png"
 import lightModeIcon from "../public/lightmode.png"
 import darkModeIcon from "../public/darkmode.png"
 
 const DarkThemeButton = styled.button`
     width: 3vw;
     height: 3vw;
-    /* background: #141417; */
+    background: #141417;
     background: none;
     position: fixed;
     border: none;
@@ -36,7 +34,7 @@ const DarkThemeButton = styled.button`
 const LightThemeButton = styled.button`
     width: 3vw;
     height: 3vw;
-    /* background: #E0E0FF; */
+    background: #E0E0FF;
     background: none;
     border: none;
     position: fixed;
@@ -55,12 +53,30 @@ const LightThemeButton = styled.button`
     }
 `
 
-
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState("light") 
   
-  const toggleTheme = () => {
-      theme == 'light' ? setTheme('dark') : setTheme('light')
+  if (typeof window !== 'undefined') {
+    useEffect(() => {
+      if (localStorage.getItem("colorTheme") === null) {
+        localStorage.setItem("colorTheme", "light")
+      } else if (localStorage.getItem("colorTheme") === "light") {
+        setTheme("light")
+      } else if (localStorage.getItem("colorTheme") === "dark") {
+        setTheme("dark")
+      }
+    },[])
+  }
+    const toggleTheme = () => {
+      // theme == 'light' ? setTheme('dark') : setTheme('light')
+      
+      if (theme === "light") {
+        setTheme("dark")
+        localStorage.setItem("colorTheme", "dark")
+      } else if (theme === "dark") {
+        setTheme("light")
+        localStorage.setItem("colorTheme", "light")
+      }
   }
   
   return (
@@ -76,5 +92,6 @@ function MyApp({ Component, pageProps }) {
     </ThemeProvider>
   ) 
 }
+
 
 export default MyApp
