@@ -2,6 +2,8 @@ import Link from "next/link"
 import styled from "styled-components"
 import Image from "next/image"
 import React from "react"
+import Head from "next/head"
+
 
 const MainBox = styled.div`
     width: 70vw;
@@ -54,10 +56,20 @@ const BoxBox = styled.div`
     width: 56vw;
     overflow-y:scroll;
 `
+const StyledList = styled.ul`
+    padding-inline-start: 1.3em;
+`
 
 
 export default function Home() {
     return (
+        <>
+            <Head>
+                <title>Om meg</title>
+                <meta name="description" content="Created by Benjamin" />
+                <link rel="icon" href="/Icon.png" />
+                <meta property="og:image" content="/Icon.png" />
+            </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
                     <Link href="/" >
@@ -70,9 +82,9 @@ export default function Home() {
                             <Image src="/projects.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
-                    <Link href="/hjem" >
+                    <Link href="/erfaring" >
                         <a>
-                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
+                            <Image src="/utdanning.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="https://github.com/Bennnis99" >
@@ -87,56 +99,22 @@ export default function Home() {
                 <BoxBox>
                     <StyledDivs1 className="text-area">
                         <h1>Om meg</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus.
-                             Etiam congue rhoncus metus nec bibendum. Aenean varius, justo quis semper mattis, nulla metus auctor ex,
-                              id pellentesque est enim id purus. Nulla eros odio, gravida id purus quis, pharetra consequat tellus. Nunc 
-                              in felis eros. Suspendisse a sem nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                               posuere cubilia curae;</p>
+                        <p>Mitt navn er Benjamin</p>
                     </StyledDivs1>
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
                             <h2>Ferdigheter</h2>
-                            <p>Etiam ut dignissim ipsum. Etiam eu ex porta, tincidunt velit eu, interdum ligula.
-                                In hac habitasse platea dictumst. Mauris in rhoncus sapien, vitae pulvinar velit.
-                                Donec condimentum leo vel neque elementum scelerisque. In sem tellus, consequat nec vestibulum a,
-                                pulvinar id leo. Ut dui neque, scelerisque eget turpis nec, venenatis fermentum arcu. Vestibulum in
-                                {/* malesuada justo. Curabitur nunc velit, fringilla sed vulputate eget, convallis ut felis. Fusce eu nisl
-                                sed dolor molestie volutpat ac sed magna. Etiam tempor, erat ac egestas congue, tellus justo aliquam
-                                leo, in accumsan arcu ipsum vel lectus. In blandit suscipit diam, id interdum sapien. Etiam id velit
-                                ut tellus interdum tempus eu sed ex. Nulla pharetra ligula ut sem tristique, sit amet dictum metus
-                                condimentum. Pellentesque ac tellus et lectus consequat ornare pharetra vel nibh. */}
-                            </p>
-                        </StyledDivs2>
-                        <StyledDivs2 className="text-area">
-                            <h2>Title 3</h2>
-                            <p>In hac habitasse platea dictumst. Donec consectetur lectus ut dui eleifend scelerisque.
-                                Praesent et ultrices nisl, quis commodo eros. Aenean dictum facilisis turpis quis
-                                viverra. Aenean lobortis magna sed metus viverra pretium. Proin volutpat tincidunt
-                                fringilla. Suspendisse id mattis tortor.
-                            </p>
-                        </StyledDivs2>
-                        <StyledDivs2 className="text-area">
-                            <h2>Title 4</h2>
-                            <p>Etiam ut aliquam lectus. Donec egestas, quam ac tincidunt fermentum, nunc dui imperdiet ipsum,
-                                ac vehicula arcu enim quis nulla. Nunc in aliquam mi. Nulla eleifend turpis sodales felis
-                                ultrices, et posuere dolor mollis. Ut efficitur venenatis quam a sollicitudin. Suspendisse
-                                potenti. Proin consectetur ante in viverra dignissim. Duis placerat cursus placerat. Sed
-                                dignissim lacus eu nisl dictum, id finibus ipsum euismod. Quisque et dictum neque. Nulla
-                                nec placerat leo.
+                            <p>tekst
                             </p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Title 5</h2>
-                            <p>Maecenas interdum ultricies sapien, sit amet semper lacus mattis at. Duis maximus dapibus condimentum.
-                                Proin convallis sollicitudin nunc sit amet efficitur. Quisque elementum magna et enim varius,
-                                id consequat dolor mollis. Nam placerat neque et scelerisque consequat. Nam massa felis, congue
-                                quis nunc non, vulputate vulputate urna. Nam arcu erat, suscipit sollicitudin velit at, tincidunt
-                                hendrerit velit. Proin pulvinar malesuada dolor vulputate eleifend. Nunc imperdiet orci justo,
-                                vitae porttitor neque tempor vitae.
+                            <p>tekst
                             </p>
                         </StyledDivs2>
                     </StyledDivs>
                 </BoxBox>
             </MainBox>
+        </>
     )
 } 

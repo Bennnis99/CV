@@ -33,7 +33,7 @@ const DarkThemeButton = styled.button`
 
 const LightThemeButton = styled.button`
     width: 3vw;
-    height: 3vw;
+    height: 2vw;
     background: #E0E0FF;
     background: none;
     border: none;
@@ -57,7 +57,7 @@ function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState("light") 
   
   useEffect(() => {
-   if (typeof window !== 'undefined') {
+   if (typeof window !== "undefined") {
       if (localStorage.getItem("colorTheme") === null) {
         localStorage.setItem("colorTheme", "light")
       } else if (localStorage.getItem("colorTheme") === "light") {
@@ -68,9 +68,7 @@ function MyApp({ Component, pageProps }) {
     }
   },[])
 
-  const toggleTheme = () => {
-    // theme == 'light' ? setTheme('dark') : setTheme('light')
-      
+  const toggleTheme = () => {      
     if (theme === "light") {
       setTheme("dark")
       localStorage.setItem("colorTheme", "dark")
@@ -81,7 +79,7 @@ function MyApp({ Component, pageProps }) {
   }
   
   return (
-    <ThemeProvider theme={theme == 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme == "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <LightThemeButton onClick={toggleTheme} id="lightButton">
         <Image src={lightModeIcon} alt="light Mode" />

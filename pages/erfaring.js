@@ -2,6 +2,8 @@ import Link from "next/link"
 import styled from "styled-components"
 import Image from "next/image"
 import React from "react"
+import Head from "next/head"
+
 
 const MainBox = styled.div`
     width: 70vw;
@@ -58,6 +60,13 @@ const BoxBox = styled.div`
 
 export default function Side() {
     return (
+        <>
+            <Head>
+                <title>Utdanning & Erfaring</title>
+                <meta name="description" content="Created by Benjamin" />
+                <link rel="icon" href="/Icon.png" />
+                <meta property="og:image" content="/Icon.png" />
+            </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
                     <Link href="/" >
@@ -70,9 +79,9 @@ export default function Side() {
                             <Image src="/projects.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
-                    <Link href="/hjem" >
+                    <Link href="/erfaring" >
                         <a>
-                            <Image src="/githubLogo.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
+                            <Image src="/utdanning.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="https://github.com/Bennnis99" >
@@ -81,38 +90,30 @@ export default function Side() {
                         </a>
                     </Link>
                 </LinkContainer>
-                <StyledProfile className={"text-area profile"}>
-                    <Image src="/chocola.png" alt="me" layout="responsive" width="30px" height="52px" />
+                <StyledProfile className="text-area profile">
+                    {/* <Image src="/chocola.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
+                    {/* <Image src="/background.jpg" alt="me" layout="responsive" width="35vw" height="62.9vh" /> */}
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">
-                        <h1>Gang gang</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec placerat purus.
-                             Etiam congue rhoncus metus nec bibendum. Aenean varius, justo quis semper mattis, nulla metus auctor ex,
-                              id pellentesque est enim id purus. Nulla eros odio, gravida id purus quis, pharetra consequat tellus. Nunc 
-                              in felis eros. Suspendisse a sem nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                               posuere cubilia curae;</p>
+                        <h1>placeholder?</h1>
+                        <p>;</p>
                     </StyledDivs1>
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
-                            <h2>oof</h2>
-                            <p>Etiam ut dignissim ipsum. Etiam eu ex porta, tincidunt velit eu, interdum ligula.
-                                In hac habitasse platea dictumst. Mauris in rhoncus sapien, vitae pulvinar velit.
-                                Donec condimentum leo vel neque elementum scelerisque. In sem tellus, consequat nec vestibulum a,
-                                pulvinar id leo. Ut dui neque, scelerisque eget turpis nec, venenatis fermentum arcu. Vestibulum in
-                                {/* malesuada justo. Curabitur nunc velit, fringilla sed vulputate eget, convallis ut felis. Fusce eu nisl
-                                sed dolor molestie volutpat ac sed magna. Etiam tempor, erat ac egestas congue, tellus justo aliquam
-                                leo, in accumsan arcu ipsum vel lectus. In blandit suscipit diam, id interdum sapien. Etiam id velit
-                                ut tellus interdum tempus eu sed ex. Nulla pharetra ligula ut sem tristique, sit amet dictum metus
-                                condimentum. Pellentesque ac tellus et lectus consequat ornare pharetra vel nibh. */}
+                            <h2>Utdanning</h2>
+                            <p>
+                            Elektro <br />
+                            Data & Elektronikk <br />
+                            Dataelektroniker <br />
                             </p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
-                            <h2>Title 3</h2>
-                            <p>In hac habitasse platea dictumst. Donec consectetur lectus ut dui eleifend scelerisque.
-                                Praesent et ultrices nisl, quis commodo eros. Aenean dictum facilisis turpis quis
-                                viverra. Aenean lobortis magna sed metus viverra pretium. Proin volutpat tincidunt
-                                fringilla. Suspendisse id mattis tortor.
+                            <h2>Erfaring</h2>
+                            <p>
+                            KIWI <br />
+                            Bright <br />
+                            Radioservice <br />
                             </p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
@@ -138,5 +139,6 @@ export default function Side() {
                     </StyledDivs>
                 </BoxBox>
             </MainBox>
+        </>
     )
 }

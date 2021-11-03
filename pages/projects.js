@@ -2,6 +2,7 @@ import Link from "next/link"
 import styled from "styled-components"
 import Image from "next/image"
 import React, {useState} from "react"
+import Head from "next/head"
 
 import Modal from "../components/Modal"
 
@@ -58,9 +59,16 @@ const BoxBox = styled.div`
 `
 
 
-export default function Side() {
+export default function Projects() {
     const [showModal, setShowModal] = useState(false);
     return (
+        <>
+            <Head>
+                <title>Prosjekter</title>
+                <meta name="description" content="Created by Benjamin" />
+                <link rel="icon" href="/Icon.png" />
+                <meta property="og:image" content="/Icon.png" />
+            </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
                     <Link href="/" >
@@ -73,9 +81,9 @@ export default function Side() {
                             <Image src="/projects.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
-                    <Link href="/hjem" >
+                    <Link href="/erfaring" >
                         <a>
-                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
+                            <Image src="/utdanning.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
                     <Link href="https://github.com/Bennnis99" >
@@ -102,7 +110,8 @@ export default function Side() {
                                 <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
                             </Modal>
                             <p>tetris lagd i React</p>
-                            <a href="https://bennnis99.github.io/React-Tetris/" target="_blank" rel="noreferrer noopener" className="link">Link til siden</a>
+                            <a href="https://bennnis99.github.io/React-Tetris/" target="_blank" rel="noreferrer noopener" className="link">Link til siden</a><br /><br />
+                            <a href="https://github.com/Bennnis99/React-Tetris" target="_blank" rel="noreferrer noopener" className="link">Link til Github</a>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Next.js CV-side</h2>
@@ -125,5 +134,6 @@ export default function Side() {
                     </StyledDivs>
                 </BoxBox>
             </MainBox>
+        </>
     )
 }
