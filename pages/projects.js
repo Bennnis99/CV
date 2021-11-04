@@ -66,8 +66,8 @@ export default function Projects() {
             <Head>
                 <title>Prosjekter</title>
                 <meta name="description" content="Created by Benjamin" />
-                <link rel="icon" href="/Icon.png" />
-                <meta property="og:image" content="/Icon.png" />
+                <link rel="icon" href="/topicon.png" />
+                <meta property="og:image" content="/topicon.png" />
             </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
@@ -109,7 +109,7 @@ export default function Projects() {
                             <Modal onClose={() => setShowModal(false)}show={showModal}>
                                 <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
                             </Modal>
-                            <p>tetris lagd i React</p>
+                            <p>Tetris lagd i React</p>
                             <a href="https://bennnis99.github.io/React-Tetris/" target="_blank" rel="noreferrer noopener" className="link">Link til siden</a><br /><br />
                             <a href="https://github.com/Bennnis99/React-Tetris" target="_blank" rel="noreferrer noopener" className="link">Link til Github</a>
                         </StyledDivs2>

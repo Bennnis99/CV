@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import "../styles/styles.css"
 
 import { useState, useEffect } from "react"
@@ -33,7 +32,7 @@ const DarkThemeButton = styled.button`
 
 const LightThemeButton = styled.button`
     width: 3vw;
-    height: 2vw;
+    height: 3vw;
     background: #E0E0FF;
     background: none;
     border: none;

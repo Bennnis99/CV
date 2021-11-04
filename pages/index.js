@@ -39,7 +39,6 @@ const StyledDivs = styled.div`
     grid-template-rows: 1fr 1fr; 
     gap: 1.5vw 1.5vw; 
     grid-template-areas: 
-        ". ."
         ". .";
     padding: 1.5vw; 
 `
@@ -56,8 +55,25 @@ const BoxBox = styled.div`
     width: 56vw;
     overflow-y:scroll;
 `
-const StyledList = styled.ul`
-    padding-inline-start: 1.3em;
+const StyledTable = styled.table`
+    border-collapse: collapse;
+    width: 100%;
+    /* margin-top: 2vh; */
+    margin-bottom: 2vh;
+    
+    td {
+    border: 1px solid #ddd;
+    padding: 8px; 
+    }
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
 `
 
 
@@ -67,8 +83,8 @@ export default function Home() {
             <Head>
                 <title>Om meg</title>
                 <meta name="description" content="Created by Benjamin" />
-                <link rel="icon" href="/Icon.png" />
-                <meta property="og:image" content="/Icon.png" />
+                <link rel="icon" href="/topicon.png" />
+                <meta property="og:image" content="/topicon.png" />
             </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
@@ -99,19 +115,38 @@ export default function Home() {
                 <BoxBox>
                     <StyledDivs1 className="text-area">
                         <h1>Om meg</h1>
-                        <p>Mitt navn er Benjamin</p>
+                        <p>
+                            Mitt navn er Benjamin, for øyeblikket holder jeg på med et IT utvikler AMO kurs
+                             hos kodehode<br />
+                            Interessen min for programmering startet når jeg begynte å spille dataspill, 
+                            på fritiden liker jeg å spille dataspill med venner
+
+                        </p>
                     </StyledDivs1>
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
                             <h2>Ferdigheter</h2>
-                            <p>tekst
+                            <p>
+                                Jeg kan programmere JavaScript, HTML, CSS, React
                             </p>
                         </StyledDivs2>
-                        <StyledDivs2 className="text-area">
-                            <h2>Title 5</h2>
-                            <p>tekst
-                            </p>
-                        </StyledDivs2>
+                        {/* <StyledDivs2 className="text-area"> */}
+                            {/* <h2>Språk</h2> */}
+                            <StyledTable>
+                                <tr>
+                                    <th>Språk</th>
+                                    <th>Evne</th>
+                                </tr>
+                                <tr>
+                                    <td>Norsk</td>
+                                    <td>Morsmål</td>
+                                </tr>
+                                <tr>
+                                    <td>Engelsk</td>
+                                    <td>Flytende</td>
+                                </tr>
+                            </StyledTable>
+                        {/* </StyledDivs2> */}
                     </StyledDivs>
                 </BoxBox>
             </MainBox>

@@ -34,13 +34,13 @@ const StyledProfile = styled.div`
     width: 35vw;
 `
 const StyledDivs = styled.div`
-    display: grid; 
+    /* display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 1.5vw 1.5vw; 
     grid-template-areas: 
         ". ."
-        ". .";
+        ". ."; */
     padding: 1.5vw; 
 `
 const StyledDivs1 = styled.div`
@@ -48,13 +48,25 @@ const StyledDivs1 = styled.div`
     margin: 1.5vw;
 `
 const StyledDivs2 = styled.div`
-    padding: 0 1vw;
-`
+    padding: 0.1vh 1vw 1vh 1vw;
+    margin-bottom: 2vh;
+    `
 const BoxBox = styled.div`
     display: flex;
     flex-direction: column;
     width: 56vw;
     overflow-y:scroll;
+`
+const SmallTitle = styled.h3`
+    margin: 0;
+    font-size: 1.2rem;
+`
+const SlantedText = styled.p`
+    font-style: italic;
+    margin: 0;
+`
+const BoldText = styled.b`
+    font-weight: bold;
 `
 
 
@@ -64,8 +76,8 @@ export default function Side() {
             <Head>
                 <title>Utdanning & Erfaring</title>
                 <meta name="description" content="Created by Benjamin" />
-                <link rel="icon" href="/Icon.png" />
-                <meta property="og:image" content="/Icon.png" />
+                <link rel="icon" href="/topicon.png" />
+                <meta property="og:image" content="/topicon.png" />
             </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
@@ -95,28 +107,65 @@ export default function Side() {
                     {/* <Image src="/background.jpg" alt="me" layout="responsive" width="35vw" height="62.9vh" /> */}
                 </StyledProfile>
                 <BoxBox>
-                    <StyledDivs1 className="text-area">
+                    {/* <StyledDivs1 className="text-area">
                         <h1>placeholder?</h1>
                         <p>;</p>
-                    </StyledDivs1>
-                    <StyledDivs>
+                    </StyledDivs1> */}
+                    <StyledDivs id="experience">
                         <StyledDivs2 className="text-area">
                             <h2>Utdanning</h2>
                             <p>
-                            Elektro <br />
-                            Data & Elektronikk <br />
-                            Dataelektroniker <br />
+                            <SmallTitle> Dataelektroniker </SmallTitle>
+                            <SlantedText>Årstad videregående skole </SlantedText>
+                            2018 - 2019 <br /><br />
+                            <SmallTitle> Data & Elektronikk </SmallTitle>
+                            <SlantedText>Årstad videregående skole </SlantedText>
+                            2016 - 2018 <br /><br />
+                            <SmallTitle> Elektro </SmallTitle>
+                            <SlantedText>Laksevåg videregående skole </SlantedText>
+                            2015 - 2016 
                             </p>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Erfaring</h2>
-                            <p>
-                            KIWI <br />
-                            Bright <br />
-                            Radioservice <br />
-                            </p>
+                            <ul>
+                                <li>
+                                    <SmallTitle> Radioservice </ SmallTitle>
+                                    <SlantedText>
+                                        Strusshamn, Askøy <br />
+                                        DES 2019 - JAN 2021
+                                    </SlantedText>
+                                    <p>Jobbet med nettbutikk</p>
+                                </li>
+                                <li>
+                                    <SmallTitle> Bright </ SmallTitle>
+                                    <SlantedText>
+                                        Sanbrekkevegen 100 <br />
+                                        5 uker 2019
+                                    </SlantedText>
+                                    <p>Service, Reperasjon og Produksjon av elektronikk, kabler, etc..</p>
+                                </li>
+                                <li>
+                                    <SmallTitle> Undervisning i koding </SmallTitle>
+                                    <SlantedText>
+                                        Ytrebygda & Rådalslien ungdomsskole <br />
+                                        HØST 2016 - VÅR 2017                                
+                                    </SlantedText>
+                                    <p>Jeg hjalp til med å undervise Arduino og Proccesing til 2 klasser i valgfaget programmering.</p>
+                                </li>
+                                <li>
+                                    <SmallTitle> KIWI </ SmallTitle>
+                                    <SlantedText>
+                                        Allehelgensgate & Hamrehjørnet <br  />
+                                        OKT 2013 - OKT 2015
+                                    </SlantedText>
+                                    <p>Butikkmedarbeider</p>
+                                </li>
+                            </ul>
+                            {/* <p> */}
+                            {/* </p> */}
                         </StyledDivs2>
-                        <StyledDivs2 className="text-area">
+                        {/* <StyledDivs2 className="text-area">
                             <h2>Title 4</h2>
                             <p>Etiam ut aliquam lectus. Donec egestas, quam ac tincidunt fermentum, nunc dui imperdiet ipsum,
                                 ac vehicula arcu enim quis nulla. Nunc in aliquam mi. Nulla eleifend turpis sodales felis
@@ -135,7 +184,7 @@ export default function Side() {
                                 hendrerit velit. Proin pulvinar malesuada dolor vulputate eleifend. Nunc imperdiet orci justo,
                                 vitae porttitor neque tempor vitae.
                             </p>
-                        </StyledDivs2>
+                        </StyledDivs2> */}
                     </StyledDivs>
                 </BoxBox>
             </MainBox>
