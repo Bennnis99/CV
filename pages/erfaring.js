@@ -128,40 +128,40 @@ export default function Side() {
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Erfaring</h2>
-                            <ul>
-                                <li>
+                            {/* <ul>
+                                <li> */}<p>
                                     <SmallTitle> Radioservice </ SmallTitle>
                                     <SlantedText>
                                         Strusshamn, Askøy <br />
                                         DES 2019 - JAN 2021
                                     </SlantedText>
                                     <p>Jobbet med nettbutikk</p>
-                                </li>
-                                <li>
+                                {/* </li>
+                                <li> */}
                                     <SmallTitle> Bright </ SmallTitle>
                                     <SlantedText>
                                         Sanbrekkevegen 100 <br />
                                         5 uker 2019
                                     </SlantedText>
                                     <p>Service, Reperasjon og Produksjon av elektronikk, kabler, etc..</p>
-                                </li>
-                                <li>
+                                {/* </li>
+                                <li> */}
                                     <SmallTitle> Undervisning i koding </SmallTitle>
                                     <SlantedText>
                                         Ytrebygda & Rådalslien ungdomsskole <br />
                                         HØST 2016 - VÅR 2017                                
                                     </SlantedText>
                                     <p>Jeg hjalp til med å undervise Arduino og Proccesing til 2 klasser i valgfaget programmering.</p>
-                                </li>
-                                <li>
+                                {/* </li>
+                                <li> */}</p>
                                     <SmallTitle> KIWI </ SmallTitle>
                                     <SlantedText>
                                         Allehelgensgate & Hamrehjørnet <br  />
                                         OKT 2013 - OKT 2015
                                     </SlantedText>
                                     <p>Butikkmedarbeider</p>
-                                </li>
-                            </ul>
+                                {/* </li>
+                            </ul> */}
                             {/* <p> */}
                             {/* </p> */}
                         </StyledDivs2>
