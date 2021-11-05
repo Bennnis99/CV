@@ -107,10 +107,6 @@ export default function Side() {
                     {/* <Image src="/background.jpg" alt="me" layout="responsive" width="35vw" height="62.9vh" /> */}
                 </StyledProfile>
                 <BoxBox>
-                    {/* <StyledDivs1 className="text-area">
-                        <h1>placeholder?</h1>
-                        <p>;</p>
-                    </StyledDivs1> */}
                     <StyledDivs id="experience">
                         <StyledDivs2 className="text-area">
                             <h2>Utdanning</h2>
@@ -153,7 +149,7 @@ export default function Side() {
                                     </SlantedText>
                                     <p>Jeg hjalp til med å undervise Arduino og Proccesing til 2 klasser i valgfaget programmering.</p>
                                 {/* </li>
-                                <li> */}</p>
+                                <li> */}
                                     <SmallTitle> KIWI </ SmallTitle>
                                     <SlantedText>
                                         Allehelgensgate & Hamrehjørnet <br  />
@@ -161,30 +157,8 @@ export default function Side() {
                                     </SlantedText>
                                     <p>Butikkmedarbeider</p>
                                 {/* </li>
-                            </ul> */}
-                            {/* <p> */}
-                            {/* </p> */}
+                            </ul> */}</p>
                         </StyledDivs2>
-                        {/* <StyledDivs2 className="text-area">
-                            <h2>Title 4</h2>
-                            <p>Etiam ut aliquam lectus. Donec egestas, quam ac tincidunt fermentum, nunc dui imperdiet ipsum,
-                                ac vehicula arcu enim quis nulla. Nunc in aliquam mi. Nulla eleifend turpis sodales felis
-                                ultrices, et posuere dolor mollis. Ut efficitur venenatis quam a sollicitudin. Suspendisse
-                                potenti. Proin consectetur ante in viverra dignissim. Duis placerat cursus placerat. Sed
-                                dignissim lacus eu nisl dictum, id finibus ipsum euismod. Quisque et dictum neque. Nulla
-                                nec placerat leo.
-                            </p>
-                        </StyledDivs2>
-                        <StyledDivs2 className="text-area">
-                            <h2>Title 5</h2>
-                            <p>Maecenas interdum ultricies sapien, sit amet semper lacus mattis at. Duis maximus dapibus condimentum.
-                                Proin convallis sollicitudin nunc sit amet efficitur. Quisque elementum magna et enim varius,
-                                id consequat dolor mollis. Nam placerat neque et scelerisque consequat. Nam massa felis, congue
-                                quis nunc non, vulputate vulputate urna. Nam arcu erat, suscipit sollicitudin velit at, tincidunt
-                                hendrerit velit. Proin pulvinar malesuada dolor vulputate eleifend. Nunc imperdiet orci justo,
-                                vitae porttitor neque tempor vitae.
-                            </p>
-                        </StyledDivs2> */}
                     </StyledDivs>
                 </BoxBox>
             </MainBox>

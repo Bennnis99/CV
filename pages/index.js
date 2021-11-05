@@ -127,7 +127,7 @@ export default function Home() {
                         <StyledDivs2 className="text-area">
                             <h2>Ferdigheter</h2>
                             <p>
-                                Jeg kan programmere JavaScript, HTML, CSS, React, Arduino og litt processing
+                                Jeg kan programmere JavaScript, HTML, CSS, React og Arduino.
                             </p>
                         </StyledDivs2>
                         {/* <StyledDivs2 className="text-area"> */}
