@@ -1,4 +1,5 @@
 import "../styles/styles.css"
+import "../styles/tooltips.css"
 
 import { useState, useEffect } from "react"
 import styled, { ThemeProvider } from "styled-components";

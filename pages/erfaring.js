@@ -81,26 +81,38 @@ export default function Side() {
             </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
-                    <Link href="/" >
+                <div className="tooltip">
+                    <Link href="/">
                         <a>
                             <Image src="/aboutme.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
+                    <span className="tooltiptext">Hjem</span>
+                </div>
+                <div className="tooltip">
                     <Link href="/projects">
                         <a>
                             <Image src="/projects.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
+                    <span className="tooltiptext">Prosjekter</span>
+                </div>
+                <div className="tooltip">
                     <Link href="/erfaring" >
                         <a>
                             <Image src="/utdanning.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
+                    <span className="tooltiptext">Utdanning & erfaring</span>
+                </div>
+                <div className="tooltip">
                     <Link href="https://github.com/Bennnis99" >
                         <a target="_blank" rel="noreferrer noopener" >
                             <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
                         </a>
                     </Link>
+                    <span className="tooltiptext">Min Github</span>
+                </div>
                 </LinkContainer>
                 <StyledProfile className="text-area profile">
                     {/* <Image src="/chocola.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
