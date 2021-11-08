@@ -12,7 +12,8 @@ export const lightTheme = {
   darkButton: "none",
   lightButton: "inline",
   profile: "0 0 1.5vw #999999",
-  textboxShadow: "inset 0 0 1vw #999999"
+  textboxShadow: "inset 0 0 1vw #999999",
+  languageTable: "1px solid #999999"
 } 
 
 export const darkTheme = {
@@ -27,7 +28,8 @@ export const darkTheme = {
   lightButton: "none",
   darkButton: "inline",
   profile: "0 0 1.5vw black",
-  textboxShadow: "inset 0 0 1vw black"
+  textboxShadow: "inset 0 0 1vw black",
+  languageTable: "1px solid #1C1C20"
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -76,5 +78,12 @@ export const GlobalStyles = createGlobalStyle`
   }
   .link {
     color: ${({ theme }) => theme.titles};
+  }
+  th {
+    background: ${({ theme }) => theme.titles};
+    border: ${({ theme }) => theme.languageTable};
+  }
+  td {
+    border: ${({ theme }) => theme.languageTable};  
   }
   `

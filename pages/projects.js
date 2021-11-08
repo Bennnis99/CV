@@ -71,40 +71,41 @@ export default function Projects() {
             </Head>
             <MainBox className="mainbox">
                 <LinkContainer>
-                <div className="tooltip">
-                    <Link href="/">
-                        <a>
-                            <Image src="/aboutme.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
-                        </a>
-                    </Link>
-                    <span className="tooltiptext">Hjem</span>
-                </div>
-                <div className="tooltip">
-                    <Link href="/projects">
-                        <a>
-                            <Image src="/projects.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
-                        </a>
-                    </Link>
-                    <span className="tooltiptext">Prosjekter</span>
-                </div>
-                <div className="tooltip">
-                    <Link href="/erfaring" >
-                        <a>
-                            <Image src="/utdanning.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
-                        </a>
-                    </Link>
-                    <span className="tooltiptext">Utdanning & erfaring</span>
-                </div>
-                <div className="tooltip">
-                    <Link href="https://github.com/Bennnis99" >
-                        <a target="_blank" rel="noreferrer noopener" >
-                            <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
-                        </a>
-                    </Link>
-                    <span className="tooltiptext">Min Github</span>
-                </div>                </LinkContainer>
+                    <div className="tooltip">
+                        <Link href="/">
+                            <a>
+                                <Image src="/aboutme.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
+                            </a>
+                        </Link>
+                        <span className="tooltiptext">Hjem</span>
+                    </div>
+                    <div className="tooltip">
+                        <Link href="/projects">
+                            <a>
+                                <Image src="/projects.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
+                            </a>
+                        </Link>
+                        <span className="tooltiptext">Prosjekter</span>
+                    </div>
+                    <div className="tooltip">
+                        <Link href="/erfaring" >
+                            <a>
+                                <Image src="/utdanning.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
+                            </a>
+                        </Link>
+                        <span className="tooltiptext">Utdanning & erfaring</span>
+                    </div>
+                    <div className="tooltip">
+                        <Link href="https://github.com/Bennnis99" >
+                            <a target="_blank" rel="noreferrer noopener" >
+                                <Image src="/githubLogo.svg" alt="link" className="icon github" layout="responsive" width="30px" height="30px" />
+                            </a>
+                        </Link>
+                        <span className="tooltiptext">Min Github</span>
+                    </div>
+                </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
-                    <Image src="/vanilla1.png" alt="me" layout="responsive" width="30px" height="52px" />
+                    {/* <Image src="/vanilla1.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">
@@ -116,9 +117,9 @@ export default function Projects() {
                     <StyledDivs>
                         <StyledDivs2 className="text-area">
                             <h2>React Tetris</h2>
-                            <Image className="imagexd" src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
+                            <Image className="project-image" src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="1366px" height="656px" />
                             <Modal onClose={() => setShowModal(false)}show={showModal}>
-                                <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="16px" height="9px" />
+                                <Image src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="1366px" height="656px" />
                             </Modal>
                             <p>Tetris lagd i React</p>
                             <a href="https://bennnis99.github.io/React-Tetris/" target="_blank" rel="noreferrer noopener" className="link">Link til siden</a><br /><br />
@@ -126,9 +127,9 @@ export default function Projects() {
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Next.js CV-side</h2>
-                            <p>
-                                Denne siden
-                            </p>
+                            <p>Denne siden</p>
+                            {/* <a href="https://bennnis99.github.io/React-Tetris/" target="_blank" rel="noreferrer noopener" className="link">Link til siden</a><br /><br /> */}
+                            <a href="https://github.com/Bennnis99/CV" target="_blank" rel="noreferrer noopener" className="link">Link til Github</a>
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Title 4</h2>
