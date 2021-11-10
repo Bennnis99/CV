@@ -129,7 +129,9 @@ export default function Home() {
                         <p>
                             Mitt navn er Benjamin, for øyeblikket holder jeg på med et IT utvikler AMO kurs
                              hos kodehode<br />
-                            Interessen min for programmering startet når jeg begynte å spille dataspill, 
+                            Interessen min for programmering startet når jeg begynte å spille dataspill. Jeg ville
+                            finne ut hvordan spillene ble lagd og hvordan jeg kunne gjøre noe lignende. Jeg 
+                            liker å lage systemer og å designe applikasjoner<br />
                             på fritiden liker jeg å spille dataspill med venner
 
                         </p>
@@ -138,7 +140,7 @@ export default function Home() {
                         <StyledDivs2 className="text-area">
                             <h2>Ferdigheter</h2>
                             <p>
-                                Jeg kan programmere JavaScript, HTML, CSS, React og Arduino.
+                                Jeg kan bruke JavaScript, HTML, CSS, React og Arduino.
                             </p>
                         </StyledDivs2>
                         {/* <StyledDivs2 className="text-area"> */}
