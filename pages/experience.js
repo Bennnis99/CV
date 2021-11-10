@@ -98,7 +98,7 @@ export default function Side() {
                         <span className="tooltiptext">Prosjekter</span>
                     </div>
                     <div className="tooltip">
-                        <Link href="/erfaring" >
+                        <Link href="/experience" >
                             <a>
                                 <Image src="/utdanning.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                             </a>

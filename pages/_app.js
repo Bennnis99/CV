@@ -6,14 +6,13 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes/ThemeConfig" 
 import Image from "next/image"
 
-import lightModeIcon from "../public/lightmode.png"
-import darkModeIcon from "../public/darkmode.png"
+import lightModeIcon from "../public/lightmode2.png"
+import darkModeIcon from "../public/darkmode2.png"
 
 const DarkThemeButton = styled.button`
     width: 3vw;
     height: 3vw;
-    background: #141417;
-    background: none;
+    background: #252525;
     position: fixed;
     border: none;
     top: 1vh;
@@ -35,7 +34,6 @@ const LightThemeButton = styled.button`
     width: 3vw;
     height: 3vw;
     background: #E0E0FF;
-    background: none;
     border: none;
     position: fixed;
     top: 1vh;
