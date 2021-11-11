@@ -32,6 +32,10 @@ const LinkContainer = styled.div`
 const StyledProfile = styled.div`
     margin: -4vh 2vw -4vh 0;
     width: 35vw;
+    img {
+        object-fit: cover;
+        object-position: 67% 100%;
+    }
 `
 const StyledDivs = styled.div`
     display: grid; 
@@ -61,7 +65,7 @@ const StyledTable = styled.table`
     margin-bottom: 2vh;
     
     td {
-    padding: 8px; 
+        padding: 8px; 
     }
     th {
         padding-top: 12px;
@@ -118,6 +122,7 @@ export default function Home() {
                     </div>
                 </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
+                    <Image src="/stock5.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
                     {/* <Image src="/Coconut-maid.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                 </StyledProfile>
                 <BoxBox>

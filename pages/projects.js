@@ -33,6 +33,10 @@ const LinkContainer = styled.div`
 const StyledProfile = styled.div`
     margin: -4vh 2vw -4vh 0;
     width: 35vw;
+    img {
+        object-fit: cover;
+        object-position: 48% 100%;
+    }
 `
 const StyledDivs = styled.div`
     display: grid; 
@@ -105,6 +109,7 @@ export default function Projects() {
                     </div>
                 </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
+                    <Image src="/stock2.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
                     {/* <Image src="/vanilla1.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                 </StyledProfile>
                 <BoxBox>

@@ -32,6 +32,10 @@ const LinkContainer = styled.div`
 const StyledProfile = styled.div`
     margin: -4vh 2vw -4vh 0;
     width: 35vw;
+    img {
+        object-fit: cover;
+        /* object-position: 60% 100%; */
+    }
 `
 const StyledDivs = styled.div`
     padding: 1.5vw; 
@@ -108,6 +112,7 @@ export default function Side() {
                     </div>
                 </LinkContainer>
                 <StyledProfile className="text-area profile">
+                    <Image src="/stock4.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
                     {/* <Image src="/chocola.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                     {/* <Image src="/background.jpg" alt="me" layout="responsive" width="35vw" height="62.9vh" /> */}
                 </StyledProfile>
