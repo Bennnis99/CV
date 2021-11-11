@@ -58,11 +58,9 @@ const BoxBox = styled.div`
 const StyledTable = styled.table`
     border-collapse: collapse;
     width: 100%;
-    /* margin-top: 2vh; */
     margin-bottom: 2vh;
     
     td {
-    /* border: 1px solid #ddd; */
     padding: 8px; 
     }
     th {
@@ -70,7 +68,6 @@ const StyledTable = styled.table`
         padding-bottom: 12px;
         text-align: left;
         color: white;
-        /* border: 1px solid #ddd; */
         padding: 8px;
     }
 `
@@ -131,7 +128,7 @@ export default function Home() {
                              hos kodehode<br />
                             Interessen min for programmering startet når jeg begynte å spille dataspill. Jeg ville
                             finne ut hvordan spillene ble lagd og hvordan jeg kunne gjøre noe lignende. Jeg 
-                            liker å lage systemer og å designe applikasjoner<br />
+                            liker å lage systemer og å designe applikasjoner.<br />
                             på fritiden liker jeg å spille dataspill med venner
 
                         </p>
