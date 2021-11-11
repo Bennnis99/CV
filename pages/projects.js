@@ -109,7 +109,7 @@ export default function Projects() {
                     </div>
                 </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
-                    <Image src="/stock2.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
+                    <Image src="/stock6.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
                     {/* <Image src="/vanilla1.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                 </StyledProfile>
                 <BoxBox>
