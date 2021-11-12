@@ -6,6 +6,7 @@ import Head from "next/head"
 
 import Modal from "../components/Modal"
 import { MainBox, LinkContainer, BoxBox, StyledProfile } from "../components/StyledComponents"
+import { device } from "../components/ScreenSizes"
 
 const StyledDivs = styled.div`
     display: grid; 
@@ -16,6 +17,16 @@ const StyledDivs = styled.div`
         ". ."
         ". .";
     padding: 1.5vw; 
+
+    @media ${device.mobileL} {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "."
+            "."
+            "."
+            ".";
+    }
 `
 const StyledDivs1 = styled.div`
     padding: 0 1vw;
