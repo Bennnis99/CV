@@ -5,39 +5,8 @@ import React, {useState} from "react"
 import Head from "next/head"
 
 import Modal from "../components/Modal"
+import { MainBox, LinkContainer, BoxBox, StyledProfile } from "../components/StyledComponents"
 
-const MainBox = styled.div`
-    width: 70vw;
-    height: 80vh;
-    margin: 10vh auto 0 auto;
-    padding: 1vw;
-    display: flex;
-`
-
-const LinkContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 12vh 0;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "."
-        "."
-        "."
-        ".";
-    margin: 10vh 1vw 10vh 0vw;
-    width: 4vw;
-    justify-content: center;
-`
-
-const StyledProfile = styled.div`
-    margin: -4vh 2vw -4vh 0;
-    width: 35vw;
-    img {
-        object-fit: cover;
-        object-position: 48% 100%;
-    }
-`
 const StyledDivs = styled.div`
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -54,12 +23,6 @@ const StyledDivs1 = styled.div`
 `
 const StyledDivs2 = styled.div`
     padding: 0 1vw 2.5vh 1vw;
-`
-const BoxBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 56vw;
-    overflow-y:scroll;
 `
 
 

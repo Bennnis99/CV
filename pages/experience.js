@@ -4,56 +4,16 @@ import Image from "next/image"
 import React from "react"
 import Head from "next/head"
 
+import { MainBox, LinkContainer, BoxBox, StyledProfile } from "../components/StyledComponents"
 
-const MainBox = styled.div`
-    width: 70vw;
-    height: 80vh;
-    margin: 10vh auto 0 auto;
-    padding: 1vw;
-    display: flex;
-`
-
-const LinkContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 12vh 0;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "."
-        "."
-        "."
-        ".";
-    margin: 10vh 1vw 10vh 0vw;
-    width: 4vw;
-    justify-content: center;
-`
-
-const StyledProfile = styled.div`
-    margin: -4vh 2vw -4vh 0;
-    width: 35vw;
-    img {
-        object-fit: cover;
-        /* object-position: 60% 100%; */
-    }
-`
 const StyledDivs = styled.div`
     padding: 1.5vw; 
-`
-const StyledDivs1 = styled.div`
-    padding: 0 1vw;
-    margin: 1.5vw;
 `
 const StyledDivs2 = styled.div`
     padding: 0.1vh 1vw 1vh 1vw;
     margin-bottom: 2vh;
     `
-const BoxBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 56vw;
-    overflow-y:scroll;
-`
+
 const SmallTitle = styled.h3`
     margin: 0;
     font-size: 1.2rem;
@@ -61,9 +21,6 @@ const SmallTitle = styled.h3`
 const SlantedText = styled.p`
     font-style: italic;
     margin: 0;
-`
-const BoldText = styled.b`
-    font-weight: bold;
 `
 
 

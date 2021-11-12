@@ -4,43 +4,13 @@ import Image from "next/image"
 import React from "react"
 import Head from "next/head"
 
+import { MainBox, LinkContainer, BoxBox, StyledProfile, StyledTable } from "../components/StyledComponents"
+import { device } from "../components/ScreenSizes"
 
-const MainBox = styled.div`
-    width: 70vw;
-    height: 80vh;
-    margin: 10vh auto 0 auto;
-    padding: 1vw;
-    display: flex;
-`
-
-const LinkContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 12vh 0;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "."
-        "."
-        "."
-        ".";
-    margin: 10vh 1vw 10vh 0vw;
-    width: 4vw;
-    justify-content: center;
-`
-
-const StyledProfile = styled.div`
-    margin: -4vh 2vw -4vh 0;
-    width: 35vw;
-    img {
-        object-fit: cover;
-        object-position: 67% 100%;
-    }
-`
 const StyledDivs = styled.div`
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr; 
     gap: 1.5vw 1.5vw; 
     grid-template-areas: 
         ". .";
@@ -49,32 +19,15 @@ const StyledDivs = styled.div`
 const StyledDivs1 = styled.div`
     padding: 0 1vw;
     margin: 1.5vw;
+    @media ${device.mobileL} {
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
 `
 const StyledDivs2 = styled.div`
     padding: 0 1vw;
 `
-const BoxBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 56vw;
-    overflow-y:scroll;
-`
-const StyledTable = styled.table`
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 2vh;
-    
-    td {
-        padding: 8px; 
-    }
-    th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        color: white;
-        padding: 8px;
-    }
-`
+
 
 
 export default function Home() {
@@ -145,8 +98,6 @@ export default function Home() {
                                 Jeg kan bruke JavaScript, HTML, CSS, React og Arduino.
                             </p>
                         </StyledDivs2>
-                        {/* <StyledDivs2 className="text-area"> */}
-                            {/* <h2>Språk</h2> */}
                             <StyledTable>
                                 <tr>
                                     <th>Språk</th>
@@ -160,8 +111,11 @@ export default function Home() {
                                     <td>Engelsk</td>
                                     <td>Flytende</td>
                                 </tr>
+                                <tr>
+                                    <td>Japansk</td>
+                                    <td>Grunnleggende</td>
+                                </tr>
                             </StyledTable>
-                        {/* </StyledDivs2> */}
                     </StyledDivs>
                 </BoxBox>
             </MainBox>

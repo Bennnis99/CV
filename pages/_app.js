@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "../themes/ThemeConfig" 
 import Image from "next/image"
+import { device } from "../components/ScreenSizes";
 
 import lightModeIcon from "../public/lightmode2.png"
 import darkModeIcon from "../public/darkmode2.png"
@@ -28,6 +29,10 @@ const DarkThemeButton = styled.button`
     :active {
         transform: scale(0.93);
     }
+    @media ${device.mobileL} {
+      width: 3vh;
+      height: 3vh;
+    }
 `
 
 const LightThemeButton = styled.button`
@@ -48,6 +53,10 @@ const LightThemeButton = styled.button`
     }
     :active {
         transform: scale(0.8);
+    }
+    @media ${device.mobileL} {
+      width: 3vh;
+      height: 3vh;
     }
 `
 
