@@ -10,7 +10,7 @@ export const MainBox = styled.div`
 
     @media ${device.mobileL} {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         margin: 0;
     }
 `
