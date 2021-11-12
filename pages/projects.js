@@ -31,9 +31,17 @@ const StyledDivs = styled.div`
 const StyledDivs1 = styled.div`
     padding: 0 1vw;
     margin: 1.5vw;
+
+    @media ${device.mobileL} {
+        padding: 0 2vw 0 2vw;
+    }
 `
 const StyledDivs2 = styled.div`
     padding: 0 1vw 2.5vh 1vw;
+
+    @media ${device.mobileL} {
+        padding: 0 2vw 1vh 2vw;
+    }
 `
 
 

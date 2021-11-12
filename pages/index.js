@@ -25,11 +25,17 @@ const StyledDivs1 = styled.div`
     margin: 1.5vw;
     @media ${device.mobileL} {
         margin-top: 4vh;
-        margin-bottom: 4vh;
+        margin-bottom: 3vh;
+        padding: 0 2vw;
     }
 `
 const StyledDivs2 = styled.div`
     padding: 0 1vw;
+
+    @media ${device.mobileL} {
+        padding: 0 2vw 1vh 2vw;
+        margin-bottom: 2vh;
+    }
 `
 
 

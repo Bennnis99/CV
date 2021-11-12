@@ -5,6 +5,7 @@ import React from "react"
 import Head from "next/head"
 
 import { MainBox, LinkContainer, BoxBox, StyledProfile } from "../components/StyledComponents"
+import { device } from "../components/ScreenSizes"
 
 const StyledDivs = styled.div`
     padding: 1.5vw; 
@@ -12,6 +13,10 @@ const StyledDivs = styled.div`
 const StyledDivs2 = styled.div`
     padding: 0.1vh 1vw 1vh 1vw;
     margin-bottom: 2vh;
+    
+    @media ${device.mobileL} {
+        padding: 0.1vh 2vw 1vh 2vw;
+    }
     `
 
 const SmallTitle = styled.h3`
