@@ -15,6 +15,10 @@ const StyledDivs = styled.div`
     grid-template-areas: 
         ". .";
     padding: 1.5vw; 
+
+    @media ${device.mobileL} {
+        display: block;
+    }
 `
 const StyledDivs1 = styled.div`
     padding: 0 1vw;
