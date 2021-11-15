@@ -7,7 +7,10 @@ export const MainBox = styled.div`
     margin: 10vh auto 0 auto;
     padding: 1vw;
     display: flex;
-
+    
+    @media ${device.tablet} {
+        width: 85vw;
+    }
     @media ${device.mobileL} {
         width: 100vw;
         height: 90vh;
@@ -42,6 +45,10 @@ width: 56vw;
 overflow-y:scroll;
 
 @media ${device.mobileL} {
+    width: 60vw;
+}
+
+@media ${device.mobileL} {
     width: 90vw;
 }
 `
@@ -53,6 +60,10 @@ img {
     object-fit: cover;
 }
 
+@media ${device.tablet} {
+    margin-right: 0;
+}
+
 @media ${device.mobileL} {
     display: none;
 }
@@ -60,7 +71,7 @@ img {
 export const StyledTable = styled.table`
 border-collapse: collapse;
 width: 100%;
-margin-bottom: 2vh;
+/* margin-bottom: 2vh; */
 
 td {
     padding: 8px; 
@@ -71,5 +82,14 @@ th {
     text-align: left;
     color: white;
     padding: 8px;
+}
+
+@media ${device.tablet} {
+    td {
+        padding: 4px;
+    }
+    th {
+        padding: 4px 0 4px 4px;
+    }
 }
 `
