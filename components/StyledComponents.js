@@ -44,7 +44,7 @@ flex-direction: column;
 width: 56vw;
 overflow-y:scroll;
 
-@media ${device.mobileL} {
+@media ${device.tablet} {
     width: 60vw;
 }
 
