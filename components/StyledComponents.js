@@ -56,7 +56,10 @@ overflow-y:scroll;
 export const StyledProfile = styled.div`
 margin: -4vh 2vw -4vh 0;
 width: 35vw;
+display: grid;
 img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 

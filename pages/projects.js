@@ -11,11 +11,11 @@ import { device } from "../components/ScreenSizes"
 const StyledDivs = styled.div`
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    /* grid-template-rows: 1fr 1fr;  */
     gap: 1.5vw 1.5vw; 
-    grid-template-areas: 
+    /* grid-template-areas: 
         ". ."
-        ". .";
+        ". ."; */
     padding: 1.5vw; 
 
     @media ${device.mobileL} {
@@ -30,7 +30,8 @@ const StyledDivs = styled.div`
 `
 const StyledDivs1 = styled.div`
     padding: 0 1vw;
-    margin: 1.5vw;
+    /* margin: 1.5vw; */
+    grid-column: 1 / 3;
 
     @media ${device.mobileL} {
         padding: 0 2vw 0 2vw;
@@ -95,13 +96,13 @@ export default function Projects() {
                     {/* <Image src="/vanilla1.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                 </StyledProfile>
                 <BoxBox>
-                    <StyledDivs1 className="text-area">
-                        <h1>Prosjekter</h1>
-                        <p>På denne siden kan du se noen av prosjektene jeg har programmert, hvor jeg tar i bruk
-                            flere forskjellige teknologier som React, Next.js, CSS, HTML, JavaScript
-                        </p>
-                    </StyledDivs1>
                     <StyledDivs>
+                        <StyledDivs1 className="text-area">
+                            <h1>Prosjekter</h1>
+                            <p>På denne siden kan du se noen av prosjektene jeg har programmert, hvor jeg tar i bruk
+                                flere forskjellige teknologier som React, Next.js, CSS, HTML, JavaScript
+                            </p>
+                        </StyledDivs1>
                         <StyledDivs2 className="text-area">
                             <h2>React Tetris</h2>
                             <Image className="project-image" src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="1366px" height="656px" />
