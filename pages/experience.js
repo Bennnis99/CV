@@ -76,8 +76,6 @@ export default function Side() {
                 <StyledProfile className="text-area profile">
                     {/* <Image src="/stock4.jpg" alt="photo" layout="responsive" width="30px" height="52px" /> */}
                     <Image src="/benjamin.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
-                    {/* <Image src="/chocola.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
-                    {/* <Image src="/background.jpg" alt="me" layout="responsive" width="35vw" height="62.9vh" /> */}
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs id="experience">

@@ -87,7 +87,6 @@ export default function Home() {
                 <StyledProfile className={"text-area profile"}>
                     {/* <Image src="/stock5.jpg" alt="photo" layout="responsive" width="30px" height="52px" /> */}
                     <Image src="/benjamin.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
-                    {/* <Image src="/Coconut-maid.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                 </StyledProfile>
                 <BoxBox>
                     <StyledDivs1 className="text-area">
