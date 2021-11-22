@@ -4,59 +4,21 @@ import Image from "next/image"
 import React from "react"
 import Head from "next/head"
 
+import { MainBox, LinkContainer, BoxBox, StyledProfile } from "../components/StyledComponents"
+import { device } from "../components/ScreenSizes"
 
-const MainBox = styled.div`
-    width: 70vw;
-    height: 80vh;
-    margin: 10vh auto 0 auto;
-    padding: 1vw;
-    display: flex;
-`
-
-const LinkContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 12vh 0;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "."
-        "."
-        "."
-        ".";
-    margin: 10vh 1vw 10vh 0vw;
-    width: 4vw;
-    justify-content: center;
-`
-
-const StyledProfile = styled.div`
-    margin: -4vh 2vw -4vh 0;
-    width: 35vw;
-`
 const StyledDivs = styled.div`
-    /* display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 1.5vw 1.5vw; 
-    grid-template-areas: 
-        ". ."
-        ". ."; */
     padding: 1.5vw; 
-`
-const StyledDivs1 = styled.div`
-    padding: 0 1vw;
-    margin: 1.5vw;
 `
 const StyledDivs2 = styled.div`
     padding: 0.1vh 1vw 1vh 1vw;
     margin-bottom: 2vh;
+    
+    @media ${device.mobileL} {
+        padding: 0.1vh 2vw 1vh 2vw;
+    }
     `
-const BoxBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 56vw;
-    overflow-y:scroll;
-`
+
 const SmallTitle = styled.h3`
     margin: 0;
     font-size: 1.2rem;
@@ -64,9 +26,6 @@ const SmallTitle = styled.h3`
 const SlantedText = styled.p`
     font-style: italic;
     margin: 0;
-`
-const BoldText = styled.b`
-    font-weight: bold;
 `
 
 
@@ -98,7 +57,7 @@ export default function Side() {
                         <span className="tooltiptext">Prosjekter</span>
                     </div>
                     <div className="tooltip">
-                        <Link href="/erfaring" >
+                        <Link href="/experience" >
                             <a>
                                 <Image src="/utdanning.svg" alt="link" className="icon active-icon" layout="responsive" width="30px" height="30px" />
                             </a>
@@ -115,6 +74,8 @@ export default function Side() {
                     </div>
                 </LinkContainer>
                 <StyledProfile className="text-area profile">
+                    {/* <Image src="/stock4.jpg" alt="photo" layout="responsive" width="30px" height="52px" /> */}
+                    <Image src="/benjamin.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
                     {/* <Image src="/chocola.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                     {/* <Image src="/background.jpg" alt="me" layout="responsive" width="35vw" height="62.9vh" /> */}
                 </StyledProfile>
@@ -136,40 +97,34 @@ export default function Side() {
                         </StyledDivs2>
                         <StyledDivs2 className="text-area">
                             <h2>Erfaring</h2>
-                            {/* <ul>
-                                <li> */}<p>
+                                <p>
                                     <SmallTitle> Radioservice </ SmallTitle>
                                     <SlantedText>
                                         Strusshamn, Askøy <br />
                                         DES 2019 - JAN 2021
                                     </SlantedText>
                                     <p>Jobbet med nettbutikk</p>
-                                {/* </li>
-                                <li> */}
+
                                     <SmallTitle> Bright </ SmallTitle>
                                     <SlantedText>
                                         Sanbrekkevegen 100 <br />
                                         5 uker 2019
                                     </SlantedText>
                                     <p>Service, Reperasjon og Produksjon av elektronikk, kabler, etc..</p>
-                                {/* </li>
-                                <li> */}
+
                                     <SmallTitle> Undervisning i koding </SmallTitle>
                                     <SlantedText>
                                         Ytrebygda & Rådalslien ungdomsskole <br />
                                         HØST 2016 - VÅR 2017                                
                                     </SlantedText>
                                     <p>Jeg hjalp til med å undervise Arduino og Proccesing til 2 klasser i valgfaget programmering.</p>
-                                {/* </li>
-                                <li> */}
                                     <SmallTitle> KIWI </ SmallTitle>
                                     <SlantedText>
                                         Allehelgensgate & Hamrehjørnet <br  />
                                         OKT 2013 - OKT 2015
                                     </SlantedText>
                                     <p>Butikkmedarbeider</p>
-                                {/* </li>
-                            </ul> */}</p>
+                                </p>
                         </StyledDivs2>
                     </StyledDivs>
                 </BoxBox>

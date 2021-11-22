@@ -5,57 +5,44 @@ import React, {useState} from "react"
 import Head from "next/head"
 
 import Modal from "../components/Modal"
+import { MainBox, LinkContainer, BoxBox, StyledProfile } from "../components/StyledComponents"
+import { device } from "../components/ScreenSizes"
 
-const MainBox = styled.div`
-    width: 70vw;
-    height: 80vh;
-    margin: 10vh auto 0 auto;
-    padding: 1vw;
-    display: flex;
-`
-
-const LinkContainer = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 12vh 0;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "."
-        "."
-        "."
-        ".";
-    margin: 10vh 1vw 10vh 0vw;
-    width: 4vw;
-    justify-content: center;
-`
-
-const StyledProfile = styled.div`
-    margin: -4vh 2vw -4vh 0;
-    width: 35vw;
-`
 const StyledDivs = styled.div`
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    /* grid-template-rows: 1fr 1fr;  */
     gap: 1.5vw 1.5vw; 
-    grid-template-areas: 
+    /* grid-template-areas: 
         ". ."
-        ". .";
+        ". ."; */
     padding: 1.5vw; 
+
+    @media ${device.mobileL} {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "."
+            "."
+            "."
+            ".";
+    }
 `
 const StyledDivs1 = styled.div`
     padding: 0 1vw;
-    margin: 1.5vw;
+    /* margin: 1.5vw; */
+    grid-column: 1 / 3;
+
+    @media ${device.mobileL} {
+        padding: 0 2vw 0 2vw;
+    }
 `
 const StyledDivs2 = styled.div`
     padding: 0 1vw 2.5vh 1vw;
-`
-const BoxBox = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 56vw;
-    overflow-y:scroll;
+
+    @media ${device.mobileL} {
+        padding: 0 2vw 1vh 2vw;
+    }
 `
 
 
@@ -88,7 +75,7 @@ export default function Projects() {
                         <span className="tooltiptext">Prosjekter</span>
                     </div>
                     <div className="tooltip">
-                        <Link href="/erfaring" >
+                        <Link href="/experience" >
                             <a>
                                 <Image src="/utdanning.svg" alt="link" className="icon" layout="responsive" width="30px" height="30px" />
                             </a>
@@ -105,16 +92,18 @@ export default function Projects() {
                     </div>
                 </LinkContainer>
                 <StyledProfile className={"text-area profile"}>
+                    {/* <Image src="/stock6.jpg" alt="photo" layout="responsive" width="30px" height="52px" /> */}
+                    <Image src="/benjamin.jpg" alt="photo" layout="responsive" width="30px" height="52px" />
                     {/* <Image src="/vanilla1.png" alt="me" layout="responsive" width="30px" height="52px" /> */}
                 </StyledProfile>
                 <BoxBox>
-                    <StyledDivs1 className="text-area">
-                        <h1>Prosjekter</h1>
-                        <p>På denne siden kan du se noen av prosjektene jeg har programmert, hvor jeg tar i bruk
-                            flere forskjellige teknologier som React, Next.js, CSS, HTML, JavaScript
-                        </p>
-                    </StyledDivs1>
                     <StyledDivs>
+                        <StyledDivs1 className="text-area">
+                            <h1>Prosjekter</h1>
+                            <p>På denne siden kan du se noen av prosjektene jeg har programmert, hvor jeg tar i bruk
+                                flere forskjellige teknologier som React, Next.js, CSS, HTML, JavaScript
+                            </p>
+                        </StyledDivs1>
                         <StyledDivs2 className="text-area">
                             <h2>React Tetris</h2>
                             <Image className="project-image" src="/react-tetris.png" alt="react tetris" onClick={() => setShowModal(true)} layout="responsive" width="1366px" height="656px" />
